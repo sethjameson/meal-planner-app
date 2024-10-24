@@ -3,13 +3,14 @@ package com.zybooks.mealplanner;
 import java.util.List;
 
 public class RecipeResponse {
-    private List<Recipe> recipes;
+    private List<GetRandomMeals> recipes;
 
-    public List<Recipe> getRecipes() {
+    public List<GetRandomMeals> getRecipes() {
         return recipes;
     }
 
-    public void setRecipes(List<Recipe> recipes) {
+    public void setRecipes(List<GetRandomMeals> recipes) {
         this.recipes = recipes;
     }
 }
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"> <!-- Ensures the content takes up full space of ScrollView -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="@string/MealPlannerIntro"
+            android:textSize="18sp" />
+
+        <!-- EditText to input number of meals -->
+        <EditText
+            android:id="@+id/mealCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mealCountHint"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"/>
+
+        <!-- Button to trigger fetching random meals -->
+        <Button
+            android:id="@+id/getMealsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/getMealButton"
+            android:layout_marginBottom="16dp" />
+
+        <!-- TextView to display the meal name -->
+        <TextView
+            android:id="@+id/mealTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/MealDisplay"
+            android:layout_marginTop="16dp" />
+
+        <!-- Layout to dynamically add images -->
+        <LinearLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Button to go back to Main Activity -->
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="85dp"
+            android:text="@string/HomeScreenButton" />
+
+    </LinearLayout>
+
+</ScrollView>
