@@ -16,9 +16,9 @@
     <string name="maxPrice">Enter the max price you are willing to spend here! (ex. 20)</string>
     <string name="mealCountHint">Enter number of meals</string>
     <string name="numMeals"> Please enter how many meals you would like here!</string>
-    <style name="GreenSquareButton" parent="Widget.AppCompat.Button">
-        <item name="android:background">@color/button_green</item>
+    <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/rounded_button</item>
         
 
         
@@ -27,9 +27,6 @@
         <item name="android:padding">12dp</item>
         <item name="android:layout_margin">8dp</item>
         <item name="android:textSize">20sp</item>
-
-        
-        <item name="android:shape">rectangle</item>
     </style>
     <style name="Theme.MealPlanner" parent="Theme.AppCompat.Light.NoActionBar">
         
@@ -40,6 +37,6 @@
         <item name="android:textColor">@color/dark_grey</item>
 
         
-        <item name="android:buttonStyle">@style/GreenSquareButton</item>
+        <item name="android:buttonStyle">@style/GreenCircleButton</item>
     </style>
 </resources>

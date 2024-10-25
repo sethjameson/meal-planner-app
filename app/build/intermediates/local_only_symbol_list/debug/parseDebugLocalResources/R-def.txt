@@ -7,6 +7,7 @@ color white
 drawable error_image
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable rounded_button
 id get_meals
 id main
 id main_button
@@ -32,7 +33,7 @@ string getMealButton
 string maxPrice
 string mealCountHint
 string numMeals
-style GreenSquareButton
+style GreenCircleButton
 style Theme.MealPlanner
 xml backup_rules
 xml data_extraction_rules
