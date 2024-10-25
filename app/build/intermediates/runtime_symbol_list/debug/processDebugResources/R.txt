@@ -3095,6 +3095,7 @@ int drawable notification_template_icon_bg 0x7f0700e1
 int drawable notification_template_icon_low_bg 0x7f0700e2
 int drawable notification_tile_bg 0x7f0700e3
 int drawable notify_panel_notification_icon_bg 0x7f0700e4
+int drawable rounded_button 0x7f0700e8
 int drawable test_level_drawable 0x7f0700e5
 int drawable tooltip_frame_dark 0x7f0700e6
 int drawable tooltip_frame_light 0x7f0700e7
@@ -4274,7 +4275,7 @@ int style Base_Widget_MaterialComponents_TextView 0x7f10011e
 int style CardView 0x7f10011f
 int style CardView_Dark 0x7f100120
 int style CardView_Light 0x7f100121
-int style GreenSquareButton 0x7f100122
+int style GreenCircleButton 0x7f100468
 int style MaterialAlertDialog_Material3 0x7f100123
 int style MaterialAlertDialog_Material3_Animation 0x7f100124
 int style MaterialAlertDialog_Material3_Body_Text 0x7f100125
