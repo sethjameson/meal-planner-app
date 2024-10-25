@@ -1,0 +1,5 @@
+com.zybooks.mealplanner.test.app-core-1.6.1-0 C:\Users\sethj\.gradle\caches\transforms-4\4bc5fa78359f00885dd0d5b4b07aa4e7\transformed\core-1.6.1\res
+com.zybooks.mealplanner.test.app-androidTest-1 C:\Users\sethj\OneDrive\Desktop\School\Fall 2024\CSCI 3660\Final\Meal Planner App\app\build\generated\res\resValues\androidTest\debug
+com.zybooks.mealplanner.test.app-mergeDebugAndroidTestResources-2 C:\Users\sethj\OneDrive\Desktop\School\Fall 2024\CSCI 3660\Final\Meal Planner App\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.zybooks.mealplanner.test.app-mergeDebugAndroidTestResources-3 C:\Users\sethj\OneDrive\Desktop\School\Fall 2024\CSCI 3660\Final\Meal Planner App\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.zybooks.mealplanner.test.app-debugAndroidTest-4 C:\Users\sethj\OneDrive\Desktop\School\Fall 2024\CSCI 3660\Final\Meal Planner App\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
