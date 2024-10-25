@@ -1,0 +1,27 @@
+<resources>
+
+    <style name="Theme.MealPlanner" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Setting the default background color to grey -->
+        <item name="android:windowBackground">@color/background_grey</item>
+        <item name="android:colorBackground">@color/background_grey</item>
+
+        <!-- Changing the text color to always be dark grey -->
+        <item name="android:textColor">@color/dark_grey</item>
+
+        <!-- Make all buttons this style -->
+        <item name="android:buttonStyle">@style/GreenCircleButton</item>
+    </style>
+
+    <!-- Making a custom button style here -->
+    <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item><!-- white text -->
+        <item name="android:background">@drawable/rounded_button</item><!-- green background -->
+
+        <!-- defining the size of the button and text size -->
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

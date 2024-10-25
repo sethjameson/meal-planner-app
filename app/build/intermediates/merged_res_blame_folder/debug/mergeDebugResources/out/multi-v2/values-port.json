@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.zybooks.mealplanner.app-mergeDebugResources-30:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\aiden\\.gradle\\caches\\transforms-4\\45e8438cefe1b3a34e88a23a7917c4d4\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

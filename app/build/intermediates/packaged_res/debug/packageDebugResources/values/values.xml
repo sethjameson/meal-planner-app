@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_grey">#D3D3D3</color>
+    <color name="button_green">#4CAF50</color>
+    <color name="dark_grey">#2F2F2F</color>
+    <color name="white">#FFFFFF</color>
+    <string name="HomeScreenButton">Return Home</string>
+    <string name="Ingredients">Find Ingredients for Your Meals</string>
+    <string name="MealDisplay">Your random meals will be displayed here:</string>
+    <string name="MealPlannerIntro">Random Meals Here!</string>
+    <string name="RandomMeal">Random Meal Information Will Display Here</string>
+    <string name="RandomMealButton">Find Random Meals</string>
+    <string name="WelcomeScreen">Welcome to the Meal Planner! \nPlan your meals here!</string>
+    <string name="app_name">Meal Planner</string>
+    <string name="getMealButton">Get Meals</string>
+    <string name="maxPrice">Enter the max price you are willing to spend here! (ex. 20)</string>
+    <string name="mealCountHint">Enter number of meals</string>
+    <string name="numMeals"> Please enter how many meals you would like here!</string>
+    <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        
+
+        
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="Theme.MealPlanner" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="android:windowBackground">@color/background_grey</item>
+        <item name="android:colorBackground">@color/background_grey</item>
+
+        
+        <item name="android:textColor">@color/dark_grey</item>
+
+        
+        <item name="android:buttonStyle">@style/GreenCircleButton</item>
+    </style>
+</resources>
