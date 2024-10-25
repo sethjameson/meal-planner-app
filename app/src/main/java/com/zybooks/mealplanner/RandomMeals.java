@@ -19,6 +19,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -68,26 +70,34 @@ public class RandomMeals extends AppCompatActivity {
         });
     }
 
-    // Method to fetch detailed recipe information
     private void getRecipeDetails(int recipeId, final TextView ingredientsTextView, final TextView instructionsTextView) {
         SpoonacularApiService apiService = ApiClient.getClient().create(SpoonacularApiService.class);
-        Call<RecipeDetailsResponse> call = apiService.getRecipeDetails(recipeId);
+        Call<GetRandomMeals> call = apiService.getRecipeDetails(recipeId);
 
-        call.enqueue(new Callback<RecipeDetailsResponse>() {
+        call.enqueue(new Callback<GetRandomMeals>() {
             @Override
-            public void onResponse(Call<RecipeDetailsResponse> call, Response<RecipeDetailsResponse> response) {
+            public void onResponse(Call<GetRandomMeals> call, Response<GetRandomMeals> response) {
                 if (response.isSuccessful() && response.body() != null) {
-                    // Populate the ingredientsTextView
+                    GetRandomMeals recipe = response.body();
+
+                    // Display recipe title
+                    ingredientsTextView.setText("- " + recipe.getTitle() + "\n");
+
+                    // Display ingredients if available
                     StringBuilder ingredientsBuilder = new StringBuilder();
-                    for (Ingredient ingredient : response.body().getIngredients()) {
-                        ingredientsBuilder.append("- ").append(ingredient.getName()).append("\n");
+                    if (recipe.getIngredients() != null && !recipe.getIngredients().isEmpty()) {
+                        for (String ingredient : recipe.getIngredients()) {
+                            ingredientsBuilder.append("- ").append(ingredient).append("\n");
+                        }
+                    } else {
+                        ingredientsBuilder.append("No ingredients available.");
                     }
                     ingredientsTextView.setText(ingredientsBuilder.toString());
 
-                    // Populate the instructionsTextView with the recipe instructions (HTML formatted)
-                    String instructions = response.body().getInstructions();
+                    // Display instructions
+                    String instructions = recipe.getInstructions();
                     if (instructions != null && !instructions.isEmpty()) {
-                        instructionsTextView.setText(Html.fromHtml(instructions)); // Format HTML
+                        instructionsTextView.setText(Html.fromHtml(instructions));
                     } else {
                         instructionsTextView.setText("No instructions available.");
                     }
@@ -97,146 +107,154 @@ public class RandomMeals extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<RecipeDetailsResponse> call, Throwable t) {
+            public void onFailure(Call<GetRandomMeals> call, Throwable t) {
                 Log.e("API Failure", "Failed to fetch recipe details: " + t.getMessage());
             }
         });
     }
 
+
+
+
     private void getRandomMeals(int number, final double priceLimit) {
         SpoonacularApiService apiService = ApiClient.getClient().create(SpoonacularApiService.class);
-        Call<RecipeResponse> call = apiService.getRandomMeals(number);
+        Call<GetRandomMeals> call = apiService.getRandomMeals(number);
 
-        call.enqueue(new Callback<RecipeResponse>() {
+        call.enqueue(new Callback<GetRandomMeals>() {
             @Override
-            public void onResponse(Call<RecipeResponse> call, Response<RecipeResponse> response) {
+            public void onResponse(Call<GetRandomMeals> call, Response<GetRandomMeals> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     food_images.removeAllViews(); // Clear any existing views
 
-                    for (GetRandomMeals recipe : response.body().getRecipes()) {
-                        if (recipe == null) continue; // Skip null recipes
+                    List<GetRandomMeals> recipes = response.body().getRecipes(); // Get the list of recipes
+                    if (recipes != null) {
+                        for (GetRandomMeals recipe : recipes) {
+                            if (recipe == null) continue; // Skip null recipes
 
-                        // Simulate price calculation based on ingredients or other factors
-                        double estimatedPrice = calculateMealPrice(recipe); // Simulate a price
-                        if (estimatedPrice > priceLimit) {
-                            continue; // Skip recipes that exceed the price limit
+                            // Simulate price calculation based on ingredients or other factors
+                            double estimatedPrice = calculateMealPrice(recipe); // Simulate a price
+                            if (estimatedPrice > priceLimit) {
+                                continue; // Skip recipes that exceed the price limit
+                            }
+
+                            // Create a new LinearLayout to hold each title, image, buttons, and ingredients
+                            LinearLayout recipeLayout = new LinearLayout(RandomMeals.this);
+                            recipeLayout.setOrientation(LinearLayout.VERTICAL);
+                            recipeLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT));
+                            recipeLayout.setPadding(16, 16, 16, 16);
+                            recipeLayout.setGravity(Gravity.CENTER_HORIZONTAL);
+
+                            // Create TextView for the recipe title
+                            TextView recipeTitleTextView = new TextView(RandomMeals.this);
+                            recipeTitleTextView.setText(recipe.getTitle() + " ($" + String.format("%.2f", estimatedPrice) + ")");
+                            recipeTitleTextView.setLayoutParams(new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT));
+                            recipeTitleTextView.setPadding(16, 0, 16, 0);
+                            recipeTitleTextView.setGravity(Gravity.CENTER);
+                            recipeTitleTextView.setTypeface(null, Typeface.BOLD);
+                            recipeTitleTextView.setTextSize(18);
+
+                            // Create a View to act as a divider (line)
+                            View dividerView = new View(RandomMeals.this);
+                            dividerView.setLayoutParams(new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    2));
+                            dividerView.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
+
+                            // Create ImageView for the recipe image
+                            ImageView recipeImageView = new ImageView(RandomMeals.this);
+                            LinearLayout.LayoutParams imageLayoutParams = new LinearLayout.LayoutParams(
+                                    750, 750);
+                            imageLayoutParams.gravity = Gravity.CENTER_HORIZONTAL;
+                            recipeImageView.setLayoutParams(imageLayoutParams);
+                            recipeImageView.setPadding(16, 16, 16, 16);
+                            Picasso.get().load(recipe.getImage()).into(recipeImageView);
+
+                            // Create Button for Ingredients toggle
+                            Button showIngredientsButton = new Button(RandomMeals.this);
+                            showIngredientsButton.setText("Show Ingredients");
+                            LinearLayout.LayoutParams buttonLayoutParams = new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT);
+                            buttonLayoutParams.gravity = Gravity.CENTER_HORIZONTAL;
+                            buttonLayoutParams.setMargins(0, 16, 0, 16); // Add margin between buttons
+                            showIngredientsButton.setLayoutParams(buttonLayoutParams);
+
+                            // Create Button for Recipe toggle
+                            Button showRecipeButton = new Button(RandomMeals.this);
+                            showRecipeButton.setText("Show Recipe");
+                            showRecipeButton.setLayoutParams(buttonLayoutParams);
+
+                            // Create TextView for Ingredients (initially hidden)
+                            TextView ingredientsTextView = new TextView(RandomMeals.this);
+                            ingredientsTextView.setLayoutParams(new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT));
+                            ingredientsTextView.setVisibility(View.GONE); // Hide ingredients initially
+
+                            // Create TextView for Recipe Instructions (initially hidden)
+                            TextView instructionsTextView = new TextView(RandomMeals.this);
+                            instructionsTextView.setLayoutParams(new LinearLayout.LayoutParams(
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT));
+                            instructionsTextView.setVisibility(View.GONE); // Hide recipe initially
+
+                            // Toggle ingredients visibility and fetch detailed ingredients on button click
+                            showIngredientsButton.setOnClickListener(new View.OnClickListener() {
+                                boolean isVisible = false;
+
+                                @Override
+                                public void onClick(View v) {
+                                    if (isVisible) {
+                                        ingredientsTextView.setVisibility(View.GONE);
+                                        showIngredientsButton.setText("Show Ingredients");
+                                    } else {
+                                        ingredientsTextView.setVisibility(View.VISIBLE);
+                                        showIngredientsButton.setText("Hide Ingredients");
+
+                                        // Fetch detailed recipe information
+                                        getRecipeDetails(recipe.getId(), ingredientsTextView, instructionsTextView);
+                                    }
+                                    isVisible = !isVisible;
+                                }
+                            });
+
+                            // Toggle recipe instructions visibility
+                            showRecipeButton.setOnClickListener(new View.OnClickListener() {
+                                boolean isVisible = false;
+
+                                @Override
+                                public void onClick(View v) {
+                                    if (isVisible) {
+                                        instructionsTextView.setVisibility(View.GONE);
+                                        showRecipeButton.setText("Show Recipe");
+                                    } else {
+                                        instructionsTextView.setVisibility(View.VISIBLE);
+                                        showRecipeButton.setText("Hide Recipe");
+
+                                        // Fetch the instructions (if not already fetched)
+                                        getRecipeDetails(recipe.getId(), ingredientsTextView, instructionsTextView);
+                                    }
+                                    isVisible = !isVisible;
+                                }
+                            });
+
+                            // Add the views to the layout
+                            recipeLayout.addView(recipeTitleTextView);
+                            recipeLayout.addView(dividerView);
+                            recipeLayout.addView(recipeImageView);
+                            recipeLayout.addView(showIngredientsButton);
+                            recipeLayout.addView(ingredientsTextView);
+                            recipeLayout.addView(showRecipeButton); // Add the "Show Recipe" button
+                            recipeLayout.addView(instructionsTextView); // Add the recipe instructions TextView
+
+                            food_images.addView(recipeLayout);
                         }
-
-                        // Create a new LinearLayout to hold each title, image, buttons, and ingredients
-                        LinearLayout recipeLayout = new LinearLayout(RandomMeals.this);
-                        recipeLayout.setOrientation(LinearLayout.VERTICAL);
-                        recipeLayout.setLayoutParams(new LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT));
-                        recipeLayout.setPadding(16, 16, 16, 16);
-                        recipeLayout.setGravity(Gravity.CENTER_HORIZONTAL);
-
-                        // Create TextView for the recipe title
-                        TextView recipeTitleTextView = new TextView(RandomMeals.this);
-                        recipeTitleTextView.setText(recipe.getTitle() + " ($" + String.format("%.2f", estimatedPrice) + ")");
-                        recipeTitleTextView.setLayoutParams(new LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.WRAP_CONTENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT));
-                        recipeTitleTextView.setPadding(16, 0, 16, 0);
-                        recipeTitleTextView.setGravity(Gravity.CENTER);
-                        recipeTitleTextView.setTypeface(null, Typeface.BOLD);
-                        recipeTitleTextView.setTextSize(18);
-
-                        // Create a View to act as a divider (line)
-                        View dividerView = new View(RandomMeals.this);
-                        dividerView.setLayoutParams(new LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                2));
-                        dividerView.setBackgroundColor(getResources().getColor(android.R.color.darker_gray));
-
-                        // Create ImageView for the recipe image
-                        ImageView recipeImageView = new ImageView(RandomMeals.this);
-                        LinearLayout.LayoutParams imageLayoutParams = new LinearLayout.LayoutParams(
-                                750, 750);
-                        imageLayoutParams.gravity = Gravity.CENTER_HORIZONTAL;
-                        recipeImageView.setLayoutParams(imageLayoutParams);
-                        recipeImageView.setPadding(16, 16, 16, 16);
-                        Picasso.get().load(recipe.getImage()).into(recipeImageView);
-
-                        // Create Button for Ingredients toggle
-                        Button showIngredientsButton = new Button(RandomMeals.this);
-                        showIngredientsButton.setText("Show Ingredients");
-                        LinearLayout.LayoutParams buttonLayoutParams = new LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.WRAP_CONTENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT);
-                        buttonLayoutParams.gravity = Gravity.CENTER_HORIZONTAL;
-                        buttonLayoutParams.setMargins(0, 16, 0, 16); // Add margin between buttons
-                        showIngredientsButton.setLayoutParams(buttonLayoutParams);
-
-                        // Create Button for Recipe toggle
-                        Button showRecipeButton = new Button(RandomMeals.this);
-                        showRecipeButton.setText("Show Recipe");
-                        showRecipeButton.setLayoutParams(buttonLayoutParams);
-
-                        // Create TextView for Ingredients (initially hidden)
-                        TextView ingredientsTextView = new TextView(RandomMeals.this);
-                        ingredientsTextView.setLayoutParams(new LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT));
-                        ingredientsTextView.setVisibility(View.GONE); // Hide ingredients initially
-
-                        // Create TextView for Recipe Instructions (initially hidden)
-                        TextView instructionsTextView = new TextView(RandomMeals.this);
-                        instructionsTextView.setLayoutParams(new LinearLayout.LayoutParams(
-                                LinearLayout.LayoutParams.MATCH_PARENT,
-                                LinearLayout.LayoutParams.WRAP_CONTENT));
-                        instructionsTextView.setVisibility(View.GONE); // Hide recipe initially
-
-                        // Toggle ingredients visibility and fetch detailed ingredients on button click
-                        showIngredientsButton.setOnClickListener(new View.OnClickListener() {
-                            boolean isVisible = false;
-
-                            @Override
-                            public void onClick(View v) {
-                                if (isVisible) {
-                                    ingredientsTextView.setVisibility(View.GONE);
-                                    showIngredientsButton.setText("Show Ingredients");
-                                } else {
-                                    ingredientsTextView.setVisibility(View.VISIBLE);
-                                    showIngredientsButton.setText("Hide Ingredients");
-
-                                    // Fetch detailed recipe information
-                                    getRecipeDetails(recipe.getId(), ingredientsTextView, instructionsTextView);
-                                }
-                                isVisible = !isVisible;
-                            }
-                        });
-
-                        // Toggle recipe instructions visibility
-                        showRecipeButton.setOnClickListener(new View.OnClickListener() {
-                            boolean isVisible = false;
-
-                            @Override
-                            public void onClick(View v) {
-                                if (isVisible) {
-                                    instructionsTextView.setVisibility(View.GONE);
-                                    showRecipeButton.setText("Show Recipe");
-                                } else {
-                                    instructionsTextView.setVisibility(View.VISIBLE);
-                                    showRecipeButton.setText("Hide Recipe");
-
-                                    // Fetch the instructions (if not already fetched)
-                                    getRecipeDetails(recipe.getId(), ingredientsTextView, instructionsTextView);
-                                }
-                                isVisible = !isVisible;
-                            }
-                        });
-
-                        // Add the views to the layout
-                        recipeLayout.addView(recipeTitleTextView);
-                        recipeLayout.addView(dividerView);
-                        recipeLayout.addView(recipeImageView);
-                        recipeLayout.addView(showIngredientsButton);
-                        recipeLayout.addView(ingredientsTextView);
-                        recipeLayout.addView(showRecipeButton); // Add the "Show Recipe" button
-                        recipeLayout.addView(instructionsTextView); // Add the recipe instructions TextView
-
-                        food_images.addView(recipeLayout);
+                    } else {
+                        Log.e("API Error", "No recipes found in API response.");
                     }
                 } else {
                     Log.e("API Error", "Error in API Response: " + response.message());
@@ -244,11 +262,12 @@ public class RandomMeals extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<RecipeResponse> call, Throwable t) {
+            public void onFailure(Call<GetRandomMeals> call, Throwable t) {
                 Log.e("API Failure", t.getMessage());
             }
         });
     }
+
 
     // Simulate a method to calculate meal price
     private double calculateMealPrice(GetRandomMeals recipe) {
