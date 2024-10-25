@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Meal Planner</string>
+    <string name="mealCountHint">Enter number of meals</string>
+    <string name="getMealButton">Get Meals</string>
+    <string name="RandomMeal">Random Meal Information Will Display Here</string>
+    <string name="RandomMealButton">Find Random Meals</string>
+    <string name="Ingredients">Find Ingredients for Your Meals</string>
+    <string name="WelcomeScreen">Welcome to the Meal Planner! \nPlan your meals here!</string>
+    <string name="MealPlannerIntro">Random Meals Here!</string>
+    <string name="HomeScreenButton">Return Home</string>
+    <string name="MealDisplay">Your random meals will be displayed here:</string>
+    <string name="maxPrice">Enter the max price you are willing to spend here! (ex. 20)</string>
+    <string name="numMeals"> Please enter how many meals you would like here!</string>
+</resources>
