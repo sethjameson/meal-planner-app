@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="Theme.MealPlanner" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Setting the default background color to grey -->
+        <item name="android:windowBackground">@color/background_grey</item>
+        <item name="android:colorBackground">@color/background_grey</item>
+
+        <!-- Changing the text color to always be dark grey -->
+        <item name="android:textColor">@color/dark_grey</item>
+
+        <!-- Make all buttons this style -->
+        <item name="android:buttonStyle">@style/GreenSquareButton</item>
+    </style>
+
+    <!-- Making a custom button style here -->
+    <style name="GreenSquareButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/button_green</item>
+        <item name="android:textColor">@color/white</item>
+        <!-- making the buttons green with white text^-->
+
+        <!-- defining the size of the button and text size -->
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">20sp</item>
+
+        <!-- making the button a rectangle -->
+        <item name="android:shape">rectangle</item>
+    </style>
+</resources>
