@@ -1,5 +1,6 @@
 package com.zybooks.mealplanner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class GetRandomMeals {
@@ -7,55 +8,47 @@ public class GetRandomMeals {
     private String title;
     private String image;
     private String instructions;
-    private List<String> ingredients; // Each string represents an ingredient
-    private List<GetRandomMeals> recipes; // To store a list of recipes for a multi-meal response
+    private List<Ingredient> extendedIngredients; // Nested structure for ingredients
+    private List<GetRandomMeals> recipes; // For storing multiple recipes in a response
 
-    // Getters and setters
+    // Getters
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getImage() {
         return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
 
     public String getInstructions() {
         return instructions;
     }
 
-    public void setInstructions(String instructions) {
-        this.instructions = instructions;
-    }
-
+    // Convert extendedIngredients to a list of strings
     public List<String> getIngredients() {
-        return ingredients;
-    }
-
-    public void setIngredients(List<String> ingredients) {
-        this.ingredients = ingredients;
+        List<String> ingredientNames = new ArrayList<>();
+        if (extendedIngredients != null) {
+            for (Ingredient ingredient : extendedIngredients) {
+                ingredientNames.add(ingredient.getName());
+            }
+        }
+        return ingredientNames;
     }
 
     public List<GetRandomMeals> getRecipes() {
         return recipes;
     }
 
-    public void setRecipes(List<GetRandomMeals> recipes) {
-        this.recipes = recipes;
+    // Nested class to represent each ingredient with additional fields if needed
+    public static class Ingredient {
+        private String name;
+
+        public String getName() {
+            return name;
+        }
     }
 }
