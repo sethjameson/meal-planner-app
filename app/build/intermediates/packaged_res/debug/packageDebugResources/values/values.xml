@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_grey">#D3D3D3</color>
-    <color name="button_green">#4CAF50</color>
     <color name="dark_grey">#2F2F2F</color>
+    <color name="green">#4CAF50</color>
     <color name="white">#FFFFFF</color>
     <string name="HomeScreenButton">Return Home</string>
     <string name="Ingredients">Find Ingredients for Your Meals</string>
@@ -19,7 +19,6 @@
     <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/rounded_button</item>
-        
 
         
         <item name="android:minHeight">48dp</item>

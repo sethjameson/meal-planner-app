@@ -15,7 +15,7 @@
     <!-- Making a custom button style here -->
     <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/white</item><!-- white text -->
-        <item name="android:background">@drawable/rounded_button</item><!-- green background -->
+        <item name="android:background">@drawable/rounded_button</item><!-- green rounded background -->
 
         <!-- defining the size of the button and text size -->
         <item name="android:minHeight">48dp</item>
