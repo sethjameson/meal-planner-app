@@ -1,8 +1,8 @@
 R_DEF: Internal format may change without notice
 local
 color background_grey
-color button_green
 color dark_grey
+color green
 color white
 drawable error_image
 drawable ic_launcher_background

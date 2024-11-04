@@ -10,16 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_gravity="center_vertical"
         android:padding="16dp">
 
 
         <TextView
             android:id="@+id/page_header"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:text="@string/MealPlannerIntro"
+            android:textAlignment="center"
             android:textSize="18sp" />
 
         <!-- this will be where the user can input a budget -->
@@ -64,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="40dp"
             android:text="@string/HomeScreenButton" />
     </LinearLayout>
 </ScrollView>

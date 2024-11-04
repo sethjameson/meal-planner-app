@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="background_grey">#D3D3D3</color>
-    <color name="button_green">#4CAF50</color>
     <color name="dark_grey">#2F2F2F</color>
+    <color name="green">#4CAF50</color>
     <color name="white">#FFFFFF</color>
     <string name="HomeScreenButton">Return Home</string>
     <string name="Ingredients">Find Ingredients for Your Meals</string>
@@ -13,13 +13,12 @@
     <string name="WelcomeScreen">Welcome to the Meal Planner! \nPlan your meals here!</string>
     <string name="app_name">Meal Planner</string>
     <string name="getMealButton">Get Meals</string>
-    <string name="maxPrice">Enter the max price you are willing to spend here! (ex. 20)</string>
+    <string name="maxPrice">Desired max price</string>
     <string name="mealCountHint">Enter number of meals</string>
-    <string name="numMeals"> Please enter how many meals you would like here!</string>
+    <string name="numMeals">Desired number of meals</string>
     <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/rounded_button</item>
-        
 
         
         <item name="android:minHeight">48dp</item>
