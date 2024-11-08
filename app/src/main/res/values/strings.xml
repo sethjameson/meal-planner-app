@@ -9,8 +9,8 @@
     <string name="MealPlannerIntro">Random Meals Here!</string>
     <string name="HomeScreenButton">Return Home</string>
     <string name="MealDisplay">Your random meals will be displayed here:</string>
-    <string name="maxPrice">Enter the max price you are willing to spend here! (ex. 20)</string>
-    <string name="numMeals"> Please enter how many meals you would like here!</string>
+    <string name="maxPrice">Desired Max Price (ex: 20)</string>
+    <string name="numMeals">Desired Number of Meals (ex: 3)</string>
     <string name="aboutTitle">About Us:</string>
     <string name="findingMeals">Finding Meals:</string>
     <string name="budget">Budgeting Meals:</string>
