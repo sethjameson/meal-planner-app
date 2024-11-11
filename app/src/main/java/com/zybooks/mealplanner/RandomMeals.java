@@ -132,7 +132,7 @@ public class RandomMeals extends AppCompatActivity {
                             if (recipe == null) continue; // Skip null recipes
 
                             // Simulate price calculation based on ingredients or other factors
-                            double estimatedPrice = calculateMealPrice(recipe); // Simulate a price
+                            double estimatedPrice = recipe.getPrice() / 10; // Simulate a price
                             if (estimatedPrice > priceLimit) {
                                 continue; // Skip recipes that exceed the price limit
                             }
@@ -269,10 +269,4 @@ public class RandomMeals extends AppCompatActivity {
     }
 
 
-    // Simulate a method to calculate meal price
-    private double calculateMealPrice(GetRandomMeals recipe) {
-        // Here, you can simulate a price calculation based on the recipe
-        // For example, a random price generator can be used for now
-        return Math.random() * 30; // Generate a random price between $0 and $30
-    }
 }

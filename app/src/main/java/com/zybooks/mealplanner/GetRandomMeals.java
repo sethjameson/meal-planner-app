@@ -1,5 +1,7 @@
 package com.zybooks.mealplanner;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,8 +10,11 @@ public class GetRandomMeals {
     private String title;
     private String image;
     private String instructions;
-    private List<Ingredient> extendedIngredients; // Nested structure for ingredients
-    private List<GetRandomMeals> recipes; // For storing multiple recipes in a response
+    private List<Ingredient> extendedIngredients;
+    private List<GetRandomMeals> recipes;
+
+    @SerializedName("pricePerServing")
+    private double price;
 
     // Getters
     public int getId() {
@@ -26,6 +31,10 @@ public class GetRandomMeals {
 
     public String getInstructions() {
         return instructions;
+    }
+
+    public double getPrice() {
+        return price;
     }
 
     // Convert extendedIngredients to a list of strings

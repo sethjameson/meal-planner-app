@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         Button about_us = findViewById(R.id.about_us);
         about_us.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("MissingInflatedId")
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (MainActivity.this, AboutUs.class);
