@@ -24,7 +24,7 @@
 17-->[androidx.core:core:1.13.0] /home/aiden/.gradle/caches/transforms-4/e3afcb6995278099648a387b88517c1a/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->/home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-35:19
+19-->/home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
 20        android:allowBackup="true"
 20-->/home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"

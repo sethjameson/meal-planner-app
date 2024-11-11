@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/aiden/.gradle/caches/transforms-4/a0eeccb7ffd15c0167bdf5c22a10ec1b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/aiden/.gradle/caches/transforms-4/1de8389cee2bfa251b30e510db3f9633/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -65,8 +65,8 @@ ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/Andro
 	android:name
 		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-35:19
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-35:19
+ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
+INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/aiden/.gradle/caches/transforms-4/a0eeccb7ffd15c0167bdf5c22a10ec1b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
