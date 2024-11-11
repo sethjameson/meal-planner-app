@@ -19,7 +19,7 @@ public class ApiClient {
                         @Override
                         public Response intercept(Chain chain) throws IOException {
                             Request request = chain.request().newBuilder()
-                                    .addHeader("x-api-key", "c4b2604bf840418cb4330b2555fc8dfe")
+                                    .addHeader("x-api-key", "2659f755ac1b4c8fa1014cd7a7d853ed")
                                     .build();
                             return chain.proceed(request);
                         }
