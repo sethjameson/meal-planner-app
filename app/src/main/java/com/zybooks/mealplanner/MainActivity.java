@@ -1,5 +1,6 @@
 package com.zybooks.mealplanner;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +28,20 @@ public class MainActivity extends AppCompatActivity {
 
         Button random_meal = findViewById(R.id.randomMeals);
         random_meal.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("MissingInflatedId")
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (MainActivity.this, RandomMeals.class);
+                startActivity(intent);
+            }
+        });
+
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
+        Button about_us = findViewById(R.id.about_us);
+        about_us.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (MainActivity.this, AboutUs.class);
                 startActivity(intent);
             }
         });
