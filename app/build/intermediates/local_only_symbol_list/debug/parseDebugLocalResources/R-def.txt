@@ -20,9 +20,14 @@ id helpTitle
 id imageView
 id main
 id main_button
+id mission
 id output
 id page_header
 id randomMeals
+id statement1
+id statement2
+id statement3
+id statement4
 id textView
 id user_budget
 id user_num_meals
@@ -52,6 +57,10 @@ string howToUse
 string maxPrice
 string mealCountHint
 string mission
+string missionStatement1
+string missionStatement2
+string missionStatement3
+string missionStatement4
 string numMeals
 style GreenCircleButton
 style Theme.MealPlanner

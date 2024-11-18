@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -112,7 +113,9 @@ public class RandomMeals extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<GetRandomMeals> call, Throwable t) {
-                // Handle any failure in getting recipe details (optional: add code here if needed)
+                // Handle any failure in getting recipe details
+                Log.e(call.toString(), t.toString());
+                Toast.makeText(RandomMeals.this, "There has been an error.", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -120,7 +123,7 @@ public class RandomMeals extends AppCompatActivity {
     // Method to fetch random meals based on user input for count and budget
     private void getRandomMeals(int number, final double priceLimit) {
         SpoonacularApiService apiService = ApiClient.getClient().create(SpoonacularApiService.class);
-        Call<GetRandomMeals> call = apiService.getRandomMeals(number);
+        Call<GetRandomMeals> call = apiService.getRandomMeals(number    );
 
         call.enqueue(new Callback<GetRandomMeals>() {
             @Override
@@ -264,7 +267,9 @@ public class RandomMeals extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<GetRandomMeals> call, Throwable t) {
-                // Handle any failure in fetching meals (optional: add code here if needed)
+                // Handle any failure in fetching meals
+                Log.e(call.toString(), t.toString());
+                Toast.makeText(RandomMeals.this, "There has been an error.", Toast.LENGTH_LONG).show();
             }
         });
     }

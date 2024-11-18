@@ -3383,6 +3383,7 @@ id matrix
 id message
 id middle
 id mini
+id mission
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3537,6 +3538,10 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+id statement1
+id statement2
+id statement3
+id statement4
 id staticLayout
 id staticPostLayout
 id stop
@@ -3931,6 +3936,10 @@ string material_timepicker_text_input_mode_description
 string maxPrice
 string mealCountHint
 string mission
+string missionStatement1
+string missionStatement2
+string missionStatement3
+string missionStatement4
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
