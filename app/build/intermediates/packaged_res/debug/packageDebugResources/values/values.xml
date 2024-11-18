@@ -14,9 +14,13 @@
     <string name="aboutTitle">About Us:</string>
     <string name="aboutUsButton">About Us</string>
     <string name="app_name">Meal Planner</string>
+    <string name="back">Back</string>
     <string name="budget">Budgeting Meals:</string>
     <string name="findingMeals">Finding Meals:</string>
     <string name="getMealButton">Get Meals</string>
+    <string name="helpButton">Help</string>
+    <string name="howToUse">Enter a maximum amount of money you are willing to spend
+        and how many meals you would like to eat this week, and click \"Get Meals\" to generate.</string>
     <string name="maxPrice">Desired Max Price (ex: 20)</string>
     <string name="mealCountHint">Enter number of meals</string>
     <string name="mission">Our Overall Mission:</string>

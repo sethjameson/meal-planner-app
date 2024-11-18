@@ -11,7 +11,12 @@ drawable rounded_button
 drawable simply
 id about_us
 id aboutus
+id back_button
 id get_meals
+id helpButton
+id helpContent
+id helpImage
+id helpTitle
 id imageView
 id main
 id main_button
@@ -22,6 +27,7 @@ id textView
 id user_budget
 id user_num_meals
 layout activity_about_us
+layout activity_help
 layout activity_main
 layout activity_random_meals
 mipmap ic_launcher
@@ -37,9 +43,12 @@ string WelcomeScreen
 string aboutTitle
 string aboutUsButton
 string app_name
+string back
 string budget
 string findingMeals
 string getMealButton
+string helpButton
+string howToUse
 string maxPrice
 string mealCountHint
 string mission

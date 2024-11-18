@@ -26,10 +26,10 @@ com.zybooks.mealplanner.app-core-runtime-2.2.0-24 /home/aiden/.gradle/caches/tra
 com.zybooks.mealplanner.app-glide-4.12.0-25 /home/aiden/.gradle/caches/transforms-4/ec22e427ecd6a77cf094b869f7c9f8be/transformed/glide-4.12.0/res
 com.zybooks.mealplanner.app-cardview-1.0.0-26 /home/aiden/.gradle/caches/transforms-4/f4d6f4e8c0b4dad5f28a7405bad74f8b/transformed/cardview-1.0.0/res
 com.zybooks.mealplanner.app-activity-1.9.2-27 /home/aiden/.gradle/caches/transforms-4/fac27955c8dcb661604a004366a1f530/transformed/activity-1.9.2/res
-com.zybooks.mealplanner.app-pngs-28 /home/aiden/AndroidStudioProjects/meal-planner-app/app/build/generated/res/pngs/debug
-com.zybooks.mealplanner.app-resValues-29 /home/aiden/AndroidStudioProjects/meal-planner-app/app/build/generated/res/resValues/debug
-com.zybooks.mealplanner.app-packageDebugResources-30 /home/aiden/AndroidStudioProjects/meal-planner-app/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.zybooks.mealplanner.app-packageDebugResources-31 /home/aiden/AndroidStudioProjects/meal-planner-app/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.zybooks.mealplanner.app-debug-32 /home/aiden/AndroidStudioProjects/meal-planner-app/app/build/intermediates/merged_res/debug/mergeDebugResources
-com.zybooks.mealplanner.app-debug-33 /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/debug/res
-com.zybooks.mealplanner.app-main-34 /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/res
+com.zybooks.mealplanner.app-pngs-28 /home/aiden/StudioProjects/meal-planner-app/app/build/generated/res/pngs/debug
+com.zybooks.mealplanner.app-resValues-29 /home/aiden/StudioProjects/meal-planner-app/app/build/generated/res/resValues/debug
+com.zybooks.mealplanner.app-packageDebugResources-30 /home/aiden/StudioProjects/meal-planner-app/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.zybooks.mealplanner.app-packageDebugResources-31 /home/aiden/StudioProjects/meal-planner-app/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.zybooks.mealplanner.app-debug-32 /home/aiden/StudioProjects/meal-planner-app/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.zybooks.mealplanner.app-debug-33 /home/aiden/StudioProjects/meal-planner-app/app/src/debug/res
+com.zybooks.mealplanner.app-main-34 /home/aiden/StudioProjects/meal-planner-app/app/src/main/res

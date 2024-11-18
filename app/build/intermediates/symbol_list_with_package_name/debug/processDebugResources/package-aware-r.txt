@@ -3190,6 +3190,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back_button
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3314,6 +3315,10 @@ id group_divider
 id grouping
 id groups
 id header_title
+id helpButton
+id helpContent
+id helpImage
+id helpTitle
 id hide_ime_id
 id hideable
 id home
@@ -3729,6 +3734,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_about_us
+layout activity_help
 layout activity_main
 layout activity_random_meals
 layout custom_dialog
@@ -3853,6 +3859,7 @@ string aboutUsButton
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string back
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -3878,7 +3885,9 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string findingMeals
 string getMealButton
+string helpButton
 string hide_bottom_view_on_scroll_behavior
+string howToUse
 string icon_content_description
 string item_view_role_description
 string m3_exceed_max_badge_text_suffix
