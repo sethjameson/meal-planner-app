@@ -12,11 +12,87 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textAlignment="center"
         android:text="@string/aboutTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="75sp"/>
+        android:textSize="50sp"/>
+
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mission"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missionStatement1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mission"
+        android:textSize="20sp"
+        android:id="@+id/statement1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missionStatement2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statement1"
+        android:textSize="20sp"
+        android:id="@+id/statement2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missionStatement3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statement2"
+        android:textSize="20sp"
+        android:id="@+id/statement3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/missionStatement4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statement3"
+        android:textSize="20sp"
+        android:id="@+id/statement4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+    </TextView>
+
+
 
     <Button
         android:id="@+id/aboutus"
@@ -26,16 +102,9 @@
         android:text="@string/HomeScreenButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/statement4"
         android:gravity="center_horizontal"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/simply"
-        app:layout_constraintTop_toBottomOf="@+id/aboutus"
-        app:layout_constraintRight_toRightOf="parent">
 
-    </ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

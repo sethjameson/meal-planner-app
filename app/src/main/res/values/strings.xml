@@ -16,6 +16,11 @@
     <string name="budget">Budgeting Meals:</string>
     <string name="mission">Our Overall Mission:</string>
     <string name="aboutUsButton">About Us</string>
+  
+    <string name="missionStatement1">Have you ever been wanting to eat new foods, but were unsure what to eat? Simply Meals is the perfect solution for you.</string>
+    <string name="missionStatement2">Here at Simply Meals, we strive on finding you random new meals that meet your budget. If you receive a meal you do no like, reroll the randomizer and find new ones!</string>
+    <string name="missionStatement3">Once you find a meal you would like to cook, you are able to see the ingredients you need to purchase, as well as the recipe to follow to cook the meal!</string>
+    <string name="missionStatement4">Note: All of our random meals and prices are gathered from spoonacular.com. Spoonacular is an API that provides access to random meals, including their prices and recipes.</string>
 
     <string name="helpButton">Help</string>
     <string name="howToUse">Enter a maximum amount of money you are willing to spend

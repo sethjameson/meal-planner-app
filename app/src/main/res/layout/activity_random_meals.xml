@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-<!-- using a linear layout within the scroll view to organize the page contents-->
+    <!-- using a linear layout within the scroll view to organize the page contents-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
