@@ -30,6 +30,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MealPlanner" >
         <activity
+            android:name="com.zybooks.mealplanner.help_activity"
+            android:exported="false" />
+        <activity
             android:name="com.zybooks.mealplanner.RandomMeals"
             android:exported="false" />
         <activity

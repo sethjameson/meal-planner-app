@@ -35,11 +35,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
         android:text="@string/aboutUsButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/randomMeals"
-        android:gravity="center_horizontal"/>
+        app:layout_constraintTop_toBottomOf="@+id/randomMeals" />
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/helpButton"
+        app:layout_constraintLeft_toRightOf="@+id/about_us"
+        app:layout_constraintTop_toBottomOf="@+id/randomMeals" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -48,8 +60,6 @@
         android:src="@drawable/simply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-    </ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

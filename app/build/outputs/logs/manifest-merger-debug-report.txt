@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/aiden/.gradle/caches/transforms-4/a0eeccb7ffd15c0167bdf5c22a10ec1b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/aiden/.gradle/caches/transforms-4/1de8389cee2bfa251b30e510db3f9633/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -51,22 +51,22 @@ MERGED from [androidx.print:print:1.0.0] /home/aiden/.gradle/caches/transforms-4
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/aiden/.gradle/caches/transforms-4/e096c77015ddea11381e8045fad1b2ca/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.support:exifinterface:27.1.0] /home/aiden/.gradle/caches/transforms-4/512e143191c7e0f01692ff14373f16ba/transformed/exifinterface-27.1.0/AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:7:5-36:19
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/aiden/.gradle/caches/transforms-4/a0eeccb7ffd15c0167bdf5c22a10ec1b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -90,61 +90,67 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /home/aiden/.gradle/ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aiden/.gradle/caches/transforms-4/3f059d087bfe33a530019e10baddd4b4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/aiden/.gradle/caches/transforms-4/3f059d087bfe33a530019e10baddd4b4/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /home/aiden/.gradle/caches/transforms-4/e3afcb6995278099648a387b88517c1a/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:10:9-54
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:16:9-29
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:15:9-49
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:15:9-49
 	android:dataExtractionRules
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:9:9-65
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:9:9-65
+activity#com.zybooks.mealplanner.help_activity
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:17:9-19:40
+	android:exported
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:18:13-42
 activity#com.zybooks.mealplanner.RandomMeals
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:17:9-19:39
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:19:13-37
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:18:13-40
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:21:13-40
 activity#com.zybooks.mealplanner.MainActivity
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:21:9-30:20
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:23:9-32:20
 	android:screenOrientation
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:24:13-49
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:26:13-49
 	android:exported
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:23:13-36
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:25:13-36
 	android:name
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:22:13-41
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:24:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:25:13-29:29
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:26:17-69
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:26:25-66
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:28:17-77
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:28:27-74
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:30:27-74
 activity#com.zybooks.mealplanner.AboutUs
-ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:32:9-34:40
+ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:33:9-35:40
 	android:exported
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:34:13-37
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:33:13-36
+		ADDED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml:34:13-36
 uses-sdk
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
-INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] /home/aiden/.gradle/caches/transforms-4/00b9883ca3f108ef35350b67fe343c16/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/aiden/.gradle/caches/transforms-4/a0eeccb7ffd15c0167bdf5c22a10ec1b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
@@ -238,9 +244,9 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/aiden/.gra
 MERGED from [com.android.support:exifinterface:27.1.0] /home/aiden/.gradle/caches/transforms-4/512e143191c7e0f01692ff14373f16ba/transformed/exifinterface-27.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:exifinterface:27.1.0] /home/aiden/.gradle/caches/transforms-4/512e143191c7e0f01692ff14373f16ba/transformed/exifinterface-27.1.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/aiden/AndroidStudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
+		INJECTED from /home/aiden/StudioProjects/meal-planner-app/app/src/main/AndroidManifest.xml
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /home/aiden/.gradle/caches/transforms-4/efe55b17690877a225545b347a00f2c5/transformed/picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities
