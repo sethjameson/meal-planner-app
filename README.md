@@ -5,5 +5,5 @@
 - When the meal has been generated, an image with the sample meals will show along with the ingredient and the recipe for that meal so user can choose which dish they want to make. User can then click on the show ingredient and show recipe button to see the ingredients needed for the meals as well as how to make them
 - To Download and run it on Android Studio, select the app->src->main folders to navigate to the main project
 - Once in the folder, click download to download the entire build of the application.
-![homepage](app/src/main/res/drawable/homepage.png)
-  
+![Homepage](app/src/main/res/drawable/homepage.png)
+![Random Meal Planner](app/src/main/res/drawable/Random%20meal%20planner.png)
