@@ -6,5 +6,5 @@
 - To Download and run it on Android Studio, select the app->src->main folders to navigate to the main project
 - Once in the folder, click download to download the entire build of the application.
 
-![Homepage](app/src/main/res/drawable/homepage.png)
-![Random Meal Planner](app/src/main/res/drawable/random_meal_planner.png)
+![Homepage](app/src/main/res/drawable/home_page_final.png)
+![Random Meal Planner](app/src/main/res/drawable/about_us_final.png)
