@@ -54,5 +54,13 @@ public class help_activity extends AppCompatActivity {
             }
         });
 
+        Button random_meals = findViewById(R.id.random_meals_button);
+        random_meals.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(help_activity.this, RandomMeals.class);
+                startActivity(intent);
+            }
+        });
     }
 }
