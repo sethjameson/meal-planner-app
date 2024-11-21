@@ -7,4 +7,4 @@
 - Once in the folder, click download to download the entire build of the application.
 
 ![Homepage](app/src/main/res/drawable/homepage.png)
-![Random Meal Planner](app/src/main/res/drawable/Random%20meal%20planner.png)
+![Random Meal Planner](app/src/main/res/drawable/random_meal_planner.png)
