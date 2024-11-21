@@ -5,8 +5,8 @@
 - Simply Meals uses an API (the API is spoonacular) to get all the random meals, along with the meals price, ingredients, and recipe.
 - When the meal has been generated, an image representing the meal will show along with the ingredients and the recipe for that meal so the user can choose which dish they want to make. The user can then click on the "Show Ingredients" and "Show Recipe" buttons to see the ingredients needed to prepare the meals as well as the steps that need to be taken to make them.
 - There are a few ways to download and run the app:
-    1) To download and run the app on Android Studio, please navigate to the main branch. From here, please select the green "Code<>" button, and then choose 'Download ZIP.' You will then be able to unzip the file and open the app in Android Studio.
-    2) Another way to import the app to Android Studio is to copy the link from the main branch. The link is 'https://github.com/sethjameson/meal-planner-app.' With this link, please open Android Studio, select new project, get from version control, and use the link to clone the project to your desired directory. 
+ 1) To download and run the app on Android Studio, please navigate to the main branch. From here, please select the green "Code<>" button, and then choose 'Download ZIP.' You will then be able to unzip the file and open the app in Android Studio.
+ 2) Another way to import the app to Android Studio is to copy the link from the main branch. The link is 'https://github.com/sethjameson/meal-planner-app.' With this link, please open Android Studio, select new project, get from version control, and use the link to clone the project to your desired directory. 
 - Below are a few images showing the app running.
 
 ![Home](app/src/main/res/drawable/home_final.png)
