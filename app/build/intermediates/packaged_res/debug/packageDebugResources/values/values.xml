@@ -3,6 +3,7 @@
     <color name="background_grey">#D3D3D3</color>
     <color name="dark_grey">#2F2F2F</color>
     <color name="green">#0C6D40</color>
+    <color name="grey">#808080</color>
     <color name="white">#FFFFFF</color>
     <string name="HomeScreenButton">Return Home</string>
     <string name="Ingredients">Find Ingredients for Your Meals</string>
@@ -19,6 +20,8 @@
     <string name="findingMeals">Finding Meals:</string>
     <string name="getMealButton">Get Meals</string>
     <string name="helpButton">Help</string>
+    <string name="help_nav">Help</string>
+    <string name="home_nav">Home</string>
     <string name="howToUse">Enter a maximum amount of money you are willing to spend
         and how many meals you would like to eat this week, and click \"Get Meals\" to generate.</string>
     <string name="maxPrice">Desired Max Price (ex: 20)</string>
@@ -29,6 +32,7 @@
     <string name="missionStatement3">Once you find a meal you would like to cook, you are able to see the ingredients you need to purchase, as well as the recipe to follow to cook the meal!</string>
     <string name="missionStatement4">Note: All of our random meals and prices are gathered from spoonacular.com. Spoonacular is an API that provides access to random meals, including their prices and recipes.</string>
     <string name="numMeals">Desired Number of Meals (ex: 3)</string>
+    <string name="random_nav">Random Meals</string>
     <style name="GreenCircleButton" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/rounded_button</item>

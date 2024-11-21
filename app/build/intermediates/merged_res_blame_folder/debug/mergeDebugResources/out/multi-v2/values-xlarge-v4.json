@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.zybooks.mealplanner.app-mergeDebugResources-30:/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "com.zybooks.mealplanner.app-mergeDebugResources-42:/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/home/aiden/.gradle/caches/transforms-4/45e8438cefe1b3a34e88a23a7917c4d4/transformed/appcompat-1.7.0/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/home/aiden/.gradle/caches/transforms-4/60066c8d60d05a4f8e4dc41d30012b84/transformed/appcompat-1.7.0/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
