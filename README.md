@@ -8,5 +8,5 @@
 
 ![Home](app/src/main/res/drawable/home_final.png)
 ![Random Meal Planner](app/src/main/res/drawable/about_us_final.png)
-![Homepage](app/src/main/res/drawable/homepage_final.png)
 ![Random_Meal_Generator](app/src/main/res/drawable/random_meal_generator_final.png)
+![Homepage](app/src/main/res/drawable/homepage_final.png)
