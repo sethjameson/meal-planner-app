@@ -4,9 +4,11 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.text.Html;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -40,21 +43,36 @@ public class RandomMeals extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_meals);
 
+        // bottom navigation
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.randomMeals);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            @SuppressLint("NonConstantResourceId")
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId();
+                if(itemId == R.id.home) {
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                else if (itemId == R.id.randomMeals) {
+                    return true;
+                }
+                else if (itemId == R.id.help) {
+                    startActivity(new Intent(getApplicationContext(), help_activity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                return false;
+            }
+        });
+
         // Link xml elements to code variables
         food_images = findViewById(R.id.output);
         user_num_meals = findViewById(R.id.user_num_meals);
         user_budget = findViewById(R.id.user_budget);
         get_random_meals = findViewById(R.id.get_meals);
-        main_activity_button = findViewById(R.id.main_button);
-
-        // Button to go back to the main activity screen
-        main_activity_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(RandomMeals.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
         // Button to get random meals based on user's input
         get_random_meals.setOnClickListener(new View.OnClickListener() {

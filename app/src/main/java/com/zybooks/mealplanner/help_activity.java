@@ -3,6 +3,8 @@ package com.zybooks.mealplanner;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class help_activity extends AppCompatActivity {
 
@@ -25,13 +29,28 @@ public class help_activity extends AppCompatActivity {
             return insets;
         });
 
-
-        Button button_back = findViewById(R.id.back_button);
-        button_back.setOnClickListener(new View.OnClickListener() {
+        // bottom navigation
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.help);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(help_activity.this, MainActivity.class);
-                startActivity(intent);
+            @SuppressLint("NonConstantResourceId")
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId();
+                if(itemId == R.id.home) {
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                else if (itemId == R.id.randomMeals) {
+                    startActivity(new Intent(getApplicationContext(), RandomMeals.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                else if (itemId == R.id.help) {
+                    return true;
+                }
+                return false;
             }
         });
 

@@ -1,118 +1,130 @@
 [
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/layout_activity_main.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/layout/activity_main.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_home.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/home.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/drawable_rounded_button.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/drawable/rounded_button.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/menu_menu_navigation.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/menu/menu_navigation.xml"
     },
     {
-        "merged": "com.zybooks.mealplanner.app-debug-32:/layout_activity_about_us.xml.flat",
-        "source": "com.zybooks.mealplanner.app-main-34:/layout/activity_about_us.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/layout_activity_help.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/layout/activity_help.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.zybooks.mealplanner.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.zybooks.mealplanner.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/xml_backup_rules.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/xml/backup_rules.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/layout_activity_about_us.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/layout/activity_about_us.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/xml_data_extraction_rules.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/xml/data_extraction_rules.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/layout_activity_about_us.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/layout/activity_about_us.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.zybooks.mealplanner.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.zybooks.mealplanner.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/layout_activity_main.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/layout/activity_main.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/drawable_simply.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/drawable/simply.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_selector.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/selector.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/xml_backup_rules.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/xml/backup_rules.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_rounded_button.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/rounded_button.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_dice_6.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/dice_6.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/layout_activity_random_meals.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/layout/activity_random_meals.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_help.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/help.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_error_image.jpg.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/error_image.jpg"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/layout_activity_help.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/layout/activity_help.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.zybooks.mealplanner.app-debug-44:/layout_activity_main.xml.flat",
+        "source": "com.zybooks.mealplanner.app-main-46:/layout/activity_main.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/drawable/ic_launcher_background.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_simply.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/simply.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/layout_activity_random_meals.xml.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/layout/activity_random_meals.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.zybooks.mealplanner.app-debug-32:/layout_activity_random_meals.xml.flat",
-        "source": "com.zybooks.mealplanner.app-main-34:/layout/activity_random_meals.xml"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-32:/drawable_error_image.jpg.flat",
-        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-34:/drawable/error_image.jpg"
+        "merged": "com.zybooks.mealplanner.app-debug-44:/layout_activity_random_meals.xml.flat",
+        "source": "com.zybooks.mealplanner.app-main-46:/layout/activity_random_meals.xml"
+    },
+    {
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/aiden/.gradle/daemon/8.7/com.zybooks.mealplanner.app-main-46:/drawable/ic_launcher_foreground.xml"
     }
 ]

@@ -3,6 +3,8 @@ package com.zybooks.mealplanner;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,31 +30,37 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button random_meal = findViewById(R.id.randomMeals);
-        random_meal.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("MissingInflatedId")
+        // bottom navigation
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (MainActivity.this, RandomMeals.class);
-                startActivity(intent);
+            @SuppressLint("NonConstantResourceId")
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId();
+                if(itemId == R.id.home)
+                    return true;
+                else if (itemId == R.id.randomMeals) {
+                    startActivity(new Intent(getApplicationContext(), RandomMeals.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                else if (itemId == R.id.help) {
+                    startActivity(new Intent(getApplicationContext(), help_activity.class));
+                    overridePendingTransition(0, 0);
+                    return true;
+                }
+                return false;
             }
         });
 
+        // about button
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        Button about_us = findViewById(R.id.about_us);
-        about_us.setOnClickListener(new View.OnClickListener() {
+        Button home_screen = findViewById(R.id.about_button);
+        home_screen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (MainActivity.this, AboutUs.class);
-                startActivity(intent);
-            }
-        });
-
-        Button helpButton = findViewById(R.id.helpButton);
-        helpButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, help_activity.class);
                 startActivity(intent);
             }
         });

@@ -3,5 +3,5 @@
     <color name="green">#0C6D40</color> <!-- Green color for buttons -->
     <color name="white">#FFFFFF</color> <!-- White color for button text -->
     <color name="dark_grey">#2F2F2F</color> <!-- Dark grey color for text -->
-
+    <color name="grey">#808080</color> <!-- Grey Color for Nav Bar -->
 </resources>
