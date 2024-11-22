@@ -17,24 +17,24 @@ public class AboutUs extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Enable edge-to-edge display and set the layout
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_about_us);
+
+        // Adjust padding for system bars
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        // Navigate back to the main screen when the button is clicked
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        Button home_screen = findViewById(R.id.aboutus);
-        home_screen.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (AboutUs.this, MainActivity.class);
-                startActivity(intent);
-            }
+        Button homeScreenButton = findViewById(R.id.aboutus);
+        homeScreenButton.setOnClickListener(view -> {
+            Intent intent = new Intent(AboutUs.this, MainActivity.class);
+            startActivity(intent);
         });
-
-
     }
 }

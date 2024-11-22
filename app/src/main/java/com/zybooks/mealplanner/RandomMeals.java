@@ -43,7 +43,7 @@ public class RandomMeals extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random_meals);
 
-        // bottom navigation
+        // Initialize bottom navigation and handle item selection
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.randomMeals);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -51,15 +51,13 @@ public class RandomMeals extends AppCompatActivity {
             @SuppressLint("NonConstantResourceId")
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
-                if(itemId == R.id.home) {
+                if (itemId == R.id.home) {
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     overridePendingTransition(0, 0);
                     return true;
-                }
-                else if (itemId == R.id.randomMeals) {
+                } else if (itemId == R.id.randomMeals) {
                     return true;
-                }
-                else if (itemId == R.id.help) {
+                } else if (itemId == R.id.help) {
                     startActivity(new Intent(getApplicationContext(), help_activity.class));
                     overridePendingTransition(0, 0);
                     return true;
@@ -68,12 +66,13 @@ public class RandomMeals extends AppCompatActivity {
             }
         });
 
-        // Link xml elements to code variables
+        // Link XML elements to code variables
         food_images = findViewById(R.id.output);
         user_num_meals = findViewById(R.id.user_num_meals);
         user_budget = findViewById(R.id.user_budget);
         get_random_meals = findViewById(R.id.get_meals);
 
+        // Handle button click to fetch random meals
         get_random_meals.setOnClickListener(view -> {
             String mealCountString = user_num_meals.getText().toString();
             String priceLimitString = user_budget.getText().toString();
@@ -88,11 +87,13 @@ public class RandomMeals extends AppCompatActivity {
         });
     }
 
+    // Method to start fetching random meals using the API
     private void getRandomMeals(int desiredMealCount, final double priceLimit) {
         SpoonacularApiService apiService = ApiClient.getClient().create(SpoonacularApiService.class);
         fetchMeals(apiService, desiredMealCount, priceLimit, new ArrayList<>());
     }
 
+    // Recursively fetch meals until the desired number is met and within the budget
     private void fetchMeals(SpoonacularApiService apiService, final int remainingCount, final double priceLimit, final List<GetRandomMeals> validMeals) {
         int overFetchCount = Math.max(remainingCount * 2, 10);
         Call<GetRandomMeals> call = apiService.getRandomMeals(overFetchCount);
@@ -129,6 +130,7 @@ public class RandomMeals extends AppCompatActivity {
         });
     }
 
+    // Display the fetched meals in the UI
     private void displayMeals(List<GetRandomMeals> meals, double priceLimit) {
         food_images.removeAllViews();
 
@@ -246,6 +248,7 @@ public class RandomMeals extends AppCompatActivity {
         }
     }
 
+    // Fetch additional recipe details for ingredients or instructions
     private void getRecipeDetails(int recipeId, final TextView ingredientsTextView, final TextView instructionsTextView) {
         SpoonacularApiService apiService = ApiClient.getClient().create(SpoonacularApiService.class);
         Call<GetRandomMeals> call = apiService.getRecipeDetails(recipeId);

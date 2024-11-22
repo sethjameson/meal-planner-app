@@ -1,4 +1,5 @@
 package com.zybooks.mealplanner;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Interceptor;
@@ -14,6 +15,7 @@ public class ApiClient {
 
     public static Retrofit getClient() {
         if (retrofit == null) {
+            // Add an interceptor to include the API key in every request
             OkHttpClient client = new OkHttpClient.Builder()
                     .addInterceptor(new Interceptor() {
                         @Override
@@ -25,6 +27,7 @@ public class ApiClient {
                         }
                     }).build();
 
+            // Create the Retrofit instance
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .client(client)

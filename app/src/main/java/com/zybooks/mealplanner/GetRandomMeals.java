@@ -13,10 +13,10 @@ public class GetRandomMeals {
     private List<Ingredient> extendedIngredients;
     private List<GetRandomMeals> recipes;
 
-    @SerializedName("pricePerServing")
+    @SerializedName("pricePerServing") // Maps the JSON field to this variable
     private double price;
 
-    // Getters
+    // Getters for meal properties
     public int getId() {
         return id;
     }
@@ -37,7 +37,7 @@ public class GetRandomMeals {
         return price;
     }
 
-    // Convert extendedIngredients to a list of strings
+    // Converts the list of ingredients to a list of their names
     public List<String> getIngredients() {
         List<String> ingredientNames = new ArrayList<>();
         if (extendedIngredients != null) {
@@ -52,7 +52,7 @@ public class GetRandomMeals {
         return recipes;
     }
 
-    // Nested class to represent each ingredient with additional fields if needed
+    // Nested class representing an ingredient
     public static class Ingredient {
         private String name;
 
